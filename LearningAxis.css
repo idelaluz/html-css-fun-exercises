@@ -58,3 +58,8 @@ body {
     background-color: #9370d8;
 }
 
+.loader-box span:nth-child(4) {
+    top: -5em;
+    left: -5em;
+    background-color: #32cd32;
+}
