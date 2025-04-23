@@ -15,3 +15,34 @@ body {
     position: absolute;
     mix-blend-mode: screen;
 }
+
+@keyframes rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.loader-box {
+    background-color: #ffd700;
+    animation: rotating 2s linear infinite;
+}
+
+@keyframes de-rotating {
+    from, to {
+        transform: rotate(0deg) scale(0.5);
+    }
+    50% {
+        transform: rotate(-180deg) scale(1.2);
+    }
+}
+
+.loader-box span {
+    animation: de-rotating 4s linear infinite;
+}
+
+.loader-box span:nth-child(1) {
+    top: 5em;
+    left: 5em;
+    background-color: #1e90ff;
+}
+
