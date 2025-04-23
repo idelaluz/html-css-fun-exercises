@@ -52,3 +52,9 @@ body {
     background-color: #ff69b4;
 }
 
+.loader-box span:nth-child(3) {
+    top: 5em;
+    left: -5em;
+    background-color: #9370d8;
+}
+
