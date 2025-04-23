@@ -46,3 +46,9 @@ body {
     background-color: #1e90ff;
 }
 
+.loader-box span:nth-child(2) {
+    top: -5em;
+    left: 5em;
+    background-color: #ff69b4;
+}
+
