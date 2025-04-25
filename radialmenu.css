@@ -9,7 +9,7 @@ body {
 }
 
 menu {
-    position: reñative;
+    position: relative;
     width: 100px;
     height: 100px;
 }
@@ -25,7 +25,7 @@ menu {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    position: absolute;
+    position: relative; /* Center button */
     top: 10px;
     left: 10px;
     z-index: 2;
@@ -39,8 +39,8 @@ menu {
 .item {
     width: 60px;
     height: 60px;
-    background: greenyellow;
-    color: darkblue;
+    background: #03a9f4;
+    color: #fff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -48,7 +48,8 @@ menu {
     top: 20px;
     left: 20px;
     transition: transform 0.3s;
-    position: absolute;
+    position: relative; /* Position relative to the menu */
+    transform: scale(0); /* Scale down the items initially */
 }
 
 .menu:hover .item {
