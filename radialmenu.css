@@ -1,0 +1,88 @@
+body {
+    height:100vh;
+    margin:0;
+    background: #1e1e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+menu {
+    position: reñative;
+    width: 100px;
+    height: 100px;
+}
+
+.center {
+    width: 80px;
+    height: 80px;
+    background: #00bcd4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    transition: transform 0.3s;    
+}
+
+.menu:hover .center {
+    transform: rotate(45deg); /* (Scale up 1.1) Rotate  the center button on hover */
+}
+
+.item {
+    width: 60px;
+    height: 60px;
+    background: greenyellow;
+    color: darkblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    transition: transform 0.3s;
+    position: absolute;
+}
+
+.menu:hover .item {
+    transform: scale(1); /* Scale up the items on hover */
+}
+
+.item:nth-child(2) {
+    transform: translate(-100px, 0) scale(0);
+}
+
+.item:nth-child(3) {
+    transform: translate(100px, 0) scale(0);
+}
+
+.item:nth-child(4) {
+    transform: translate(0, -100px) scale(0);
+}
+
+.item:nth-child(5) {
+    transform: translate(0, 100px) scale(0);
+}
+
+.menu:hover .item:nth-child(2) {
+    transform: translate(-100px, 0) scale(1);
+}
+
+.menu:hover .item:nth-child(3) {
+    transform: translate(100px, 0) scale(1);
+}
+
+.menu:hover .item:nth-child(4) {
+    transform: translate(0, -100px) scale(1);
+}
+
+.menu:hover .item:nth-child(5) {
+    transform: translate(0, 100px) scale(1);
+}
