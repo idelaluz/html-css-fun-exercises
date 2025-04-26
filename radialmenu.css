@@ -1,6 +1,6 @@
 body {
-    height:100vh;
-    margin:0;
+    height: 100vh;
+    margin: 0;
     background: #1e1e2f;
     display: flex;
     justify-content: center;
@@ -8,10 +8,10 @@ body {
     font-family: sans-serif;
 }
 
-menu {
+.menu {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 .center {
@@ -25,15 +25,16 @@ menu {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    position: absolute; /* Center button */
-    top: 300px;
-    left: 300px;
-    z-index: 2; /* Ensure center button is on top */
-    transition: transform 0.3s;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: transform 0.3s;
 }
 
 .menu:hover .center {
-    transform: rotate(45deg); /* (Scale up 1.1) Rotate  the center button on hover */
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .item {
@@ -45,48 +46,25 @@ menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -100px; /* Position the items relative to the menu */
-    left: -100px; /* Position the items relative to the menu */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
     transition: transform 0.3s;
-    position: relative; /* Position relative to the menu */
-    transform: scale(0); /* Scale down the items initially */
-}
-
-.menu:hover .item {
-    transform: scale(1); /* Scale up the items on hover */
-}
-
-.item:nth-child(2) {
-    transform: translate(500, 0) scale(0); /* Move the item out of view initially */
-}
-
-.item:nth-child(3) {
-    transform: translate(0, 0) scale(0); /* Move the item out of view initially */
-    /* Position the item to the right of the center button */
-    /* transform: translate(100px, 0) scale(0); */
-}
-
-.item:nth-child(4) {
-    transform: translate(0, 0) scale(0);
-}
-
-.item:nth-child(5) {
-    transform: translate(0, 0) scale(0);
 }
 
 .menu:hover .item:nth-child(2) { 
-    transform: translate(500, 0) scale(1); /* Move the item into view on hover */
-    /* Position the item to the left of the center button */
-}
+    transform: translate(-50%, -200%) scale(1);  
+} /* Top A */
 
-.menu:hover .item:nth-child(3) {
-    transform: translate(0, 0) scale(1);
-}
+.menu:hover .item:nth-child(3) { 
+    transform: translate(-200%, -50%) scale(1); 
+} /* Left B */
 
-.menu:hover .item:nth-child(4) {
-    transform: translate(0, 0) scale(1);
-}
+.menu:hover .item:nth-child(4) { 
+    transform: translate(-50%, 100%) scale(1); 
+}  /* Bottom C */
 
-.menu:hover .item:nth-child(5) {
-    transform: translate(0, 0) scale(1);
-}
+.menu:hover .item:nth-child(5) { 
+    transform: translate(100%, -50%) scale(1); 
+}  /* Right D */
