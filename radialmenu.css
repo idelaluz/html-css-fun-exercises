@@ -25,10 +25,10 @@ menu {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
-    position: relative; /* Center button */
-    top: 10px;
-    left: 10px;
-    z-index: 2;
+    position: absolute; /* Center button */
+    top: 300px;
+    left: 300px;
+    z-index: 2; /* Ensure center button is on top */
     transition: transform 0.3s;    
 }
 
@@ -45,8 +45,8 @@ menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 20px;
-    left: 20px;
+    top: -100px; /* Position the items relative to the menu */
+    left: -100px; /* Position the items relative to the menu */
     transition: transform 0.3s;
     position: relative; /* Position relative to the menu */
     transform: scale(0); /* Scale down the items initially */
@@ -57,33 +57,36 @@ menu {
 }
 
 .item:nth-child(2) {
-    transform: translate(-100px, 0) scale(0);
+    transform: translate(500, 0) scale(0); /* Move the item out of view initially */
 }
 
 .item:nth-child(3) {
-    transform: translate(100px, 0) scale(0);
+    transform: translate(0, 0) scale(0); /* Move the item out of view initially */
+    /* Position the item to the right of the center button */
+    /* transform: translate(100px, 0) scale(0); */
 }
 
 .item:nth-child(4) {
-    transform: translate(0, -100px) scale(0);
+    transform: translate(0, 0) scale(0);
 }
 
 .item:nth-child(5) {
-    transform: translate(0, 100px) scale(0);
+    transform: translate(0, 0) scale(0);
 }
 
-.menu:hover .item:nth-child(2) {
-    transform: translate(-100px, 0) scale(1);
+.menu:hover .item:nth-child(2) { 
+    transform: translate(500, 0) scale(1); /* Move the item into view on hover */
+    /* Position the item to the left of the center button */
 }
 
 .menu:hover .item:nth-child(3) {
-    transform: translate(100px, 0) scale(1);
+    transform: translate(0, 0) scale(1);
 }
 
 .menu:hover .item:nth-child(4) {
-    transform: translate(0, -100px) scale(1);
+    transform: translate(0, 0) scale(1);
 }
 
 .menu:hover .item:nth-child(5) {
-    transform: translate(0, 100px) scale(1);
+    transform: translate(0, 0) scale(1);
 }
