@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: #1e1e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.magic-box {
+    width: 120px;
+    height: 120px;
+    background: #00bcd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.6s ease;
+    cursor: pointer;
+}
+
+.magic-box:hover {
+    transform: 
+        translate(100px, -50px) /* Move to the right and a little up */
+        rotate(45deg)           /* Rotate 45 degrees */
+        scale(3.5)              /* Make it 1.5x bigger */
+        skew(10deg, 5deg);      /* Skew slightly horizontally and vertically */
+}
+
+/* What happens when you hover?
+
+    The box slides 100px right and 50px up,
+
+    Rotates 45 degrees,
+
+    Grows to 3.5x size,
+
+    Tilts (skews) by 10° horizontally and 5° vertically,
+
+    All in a smooth 0.6 second animation.*/
