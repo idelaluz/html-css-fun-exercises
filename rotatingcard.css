@@ -34,4 +34,11 @@ body {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
 
+.card-front {
+    background: #ffffff;
+    color: #333;
+}
