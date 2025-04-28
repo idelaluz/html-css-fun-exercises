@@ -42,3 +42,20 @@ body {
     background: #ffffff;
     color: #333;
 }
+
+.card-back {
+    background: #f76c6c;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
