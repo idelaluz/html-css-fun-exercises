@@ -5,3 +5,17 @@
     font-size: 11px;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #fff;
+    text-shadow: 0 1px 2px #000;
+    background-color: darkblue;
+}
+
+form {
+    
+}
