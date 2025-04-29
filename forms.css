@@ -25,3 +25,12 @@ form {
     gap: 2rem;
 }
 
+input {
+    padding: 0.5em 1em;
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2em;
+    width: 220px;
+}
+
