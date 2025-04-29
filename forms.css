@@ -44,3 +44,13 @@ fieldset {
     border-radius: 4px
 }
 
+fieldset:focus-within {
+    border-color: #b02727;
+}
+
+legend {
+    margin-left: 0.75em;
+    padding-inline:0.5em;
+    font-size: 1.25em;
+}
+
