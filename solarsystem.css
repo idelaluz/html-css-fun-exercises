@@ -34,3 +34,9 @@ body {
     border-radius: 50%;
 }
 
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
