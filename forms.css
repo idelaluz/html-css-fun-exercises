@@ -34,3 +34,7 @@ input {
     width: 220px;
 }
 
+input:focus {
+    outline: 0;
+}
+
