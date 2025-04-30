@@ -38,6 +38,7 @@ body {
     background: #0af;
     box-shadow: 0 0 20px #0af;
     border-radius: 10px;
+    animation: animate 1.5s linear infinite;
 }
 
 @keyframes animate {
