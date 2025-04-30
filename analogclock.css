@@ -30,4 +30,22 @@ body {
     border-radius: 100%;
 }
 
+#clockInner::after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg); /*forgot to add semicolon?*/
+}
+
+#clockInner::after,
+#clockInner::before,
+#clockInner .marking {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #3FF1F0;
+    z-index: 0;
+    left: 49%;
+    top: 0%;
+}
 
