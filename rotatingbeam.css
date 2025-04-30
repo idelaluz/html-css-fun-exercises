@@ -39,6 +39,7 @@ body {
     box-shadow: 0 0 20px #0af;
     border-radius: 10px;
     animation: animate 1.5s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
 }
 
 @keyframes animate {
