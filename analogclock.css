@@ -123,9 +123,9 @@ body {
 #minute {
     background-color: #6ba6f6; /* color of the minute hand */
     width: 2%;
-    height: 30%;
+    height: 35%; /* height of the minute hand */
     top: 20%;
-    left: 48.9%;
+    left: 48%; /* left position of the minute hand */
     opacity: 0.8;
 }
 
