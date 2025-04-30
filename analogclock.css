@@ -23,7 +23,7 @@ body {
 
 #clockInner {
     position: relative;
-    background: #282828;
+    background: #282828;;
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -78,3 +78,15 @@ body {
     transform: rotate(150deg);
 }
 
+.clockface {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: #282828;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    z-index: 1;
+}
