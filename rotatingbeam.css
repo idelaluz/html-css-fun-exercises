@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(#008, #000);
+    background: radial-gradient(#003, #000);
 }
 
 .box {
