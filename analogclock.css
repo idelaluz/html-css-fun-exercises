@@ -103,3 +103,38 @@ body {
     background: #4d4b63; /* color of the center dot */
     z-index: 11;
 }
+
+#hour, #minute, #second {
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+    z-index: 5; /* z-index for the hands */    
+}
+
+#hour {
+    background: #6ba6f6; /* color of the hour hand */
+    width: 2.4%;
+    height: 25%;
+    top: 26%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+
+#minute {
+    background-color: #6ba6f6; /* color of the minute hand */
+    width: 2%;
+    height: 30%;
+    top: 20%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+#second {
+    background: #aa7c51; /* color of the second hand */
+    width: 1.6%;
+    height: 40%;
+    top: 10%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+
