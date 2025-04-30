@@ -8,3 +8,16 @@ body {
     background-color: #282828;
 }
 
+#clock {
+    position: relative;
+    height: 20vw;
+    width: 20vw;
+    border: 10px solid blue;
+    box-shadow: inset 1px 1px 5px #ffffff, 1px 1px 5px #ffffff;
+    border-radius: 50%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
