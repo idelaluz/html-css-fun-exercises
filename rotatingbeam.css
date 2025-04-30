@@ -51,6 +51,6 @@ body {
     }
     100% {
         transform: translateY(160px) rotate(45deg);
-        filter: hue-rotate(360 deg);
+        filter: hue-rotate(360deg);
     }
 }
