@@ -39,6 +39,15 @@ document.addEventListener('DOMContentLoaded', function () {
             daysContainer.appendChild(dayDiv);                             
         }
 
+        // Next month's dates
+        const nextMonthStartDay = 7 - new Date(year, month + 1, 0).getDay() - 1;
+        for (let i = 1; i <= nextMonthStartDay; i++) {
+            const dayDiv = document.createElement('div');
+            dayDiv.textContent = i;
+            dayDiv.classList.add('fade');
+            daysContainer.appendChild(dayDiv);
+        }
+
     }
 
     renderCalendar(currentDate);
