@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         daysContainer.innerHTML = '';
 
+        // Previous month's dates
+        const prevMonthLastDay = new Date(year, month, 0).getDate();
+        for (let i = firstDay; i > 0; i--) {
+            const dayDiv = document.createElement('div');
+            dayDiv.textContent = 
+        }
+
         // Current month's dates
         for (let i = 1; i <= lastDay; i++) {
             const dayDiv = document.createElement('div');
@@ -29,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             daysContainer.appendChild(dayDiv);                             
         }
-        
+
     }
 
     renderCalendar(currentDate);
