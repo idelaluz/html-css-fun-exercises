@@ -27,3 +27,9 @@ body {
 .btn {
     cursor: pointer;
 }
+
+#month-year {
+    font-weight: bold;
+    font-size: 20px;
+}
+

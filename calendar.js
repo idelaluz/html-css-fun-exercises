@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const monthYear = document.getElementById('month-year');
+    const daysContainer = document.getElementById('days');
 
     const months = [
         'January', 'February', 'March', 'April', 'May', 'June',
@@ -17,6 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         monthYear.textContent = `${months[month]} ${year}`;
 
+        daysContainer.innerHTML = '';
+
+        // Current month's dates
+        for (let i = 1; i <= lastDay; i++) {
+            const dayDiv = document.createElement('div');
+            dayDiv.textContent = i;
+            if (i === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+                dayDiv.classList.add('today');
+            }
+            daysContainer.appendChild(dayDiv);                             
+        }
+        
     }
 
     renderCalendar(currentDate);
