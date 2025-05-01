@@ -63,3 +63,7 @@ body {
     background-color: orangered;
     color: white;
 }
+
+.days .fade {
+    color: #555;
+}
