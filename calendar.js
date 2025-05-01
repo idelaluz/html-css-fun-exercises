@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const monthYear = document.getElementById('month-year');
     const daysContainer = document.getElementById('days');
     const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+
 
 
     const months = [
@@ -57,6 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
         renderCalendar(currentDate);
     });
 
+    nextButton.addEventListener('click', function () {
+        currentDate.setMonth(currentDate.getMonth() + 1);
+        renderCalendar(currentDate);
+    });
 
     renderCalendar(currentDate);
 });
