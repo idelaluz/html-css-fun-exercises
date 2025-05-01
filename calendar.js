@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
     
     let currentDate = new Date();
-    let today = newDate();
+    let today = new Date();
 
     function renderCalendar(date) {
         const year = date.getFullYear();
