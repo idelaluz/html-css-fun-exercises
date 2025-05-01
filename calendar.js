@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const prevMonthLastDay = new Date(year, month, 0).getDate();
         for (let i = firstDay; i > 0; i--) {
             const dayDiv = document.createElement('div');
-            dayDiv.textContent = 
+            dayDiv.textContent = prevMonthLastDay - i + 1;
+            dayDiv.classList.add('fade');
+            daysContainer.appendChild(dayDiv);
         }
 
         // Current month's dates
