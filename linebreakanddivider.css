@@ -1,0 +1,34 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px #eee;
+    padding: 20px;
+    width: 300px;
+}
+
+.heading {
+    color: orangered;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.example {
+    font-size: 1rem;
+}
+
+hr {
+    border: none; 
+    height: 2px;
+    background: orangered;
+}
