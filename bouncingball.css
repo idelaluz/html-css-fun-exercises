@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    overflow: hidden; /* Prevent scrolling */    
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #ff6347; /* Tomato color */
+    border-radius: 50%;
+    position: relative; /* Position relative to the parent */
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce { /* Bounce animation */
+    0%, 100% {
+        top: 0; /* Start and end at the top */
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 250px; /* Bounce height */
+        animation-timing-function: ease-out;        
+    }
+}
