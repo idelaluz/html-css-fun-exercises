@@ -1,8 +1,8 @@
-const stripHTML = Array.from({length: 10}, (_, i) =>`<div class="digit">${i}</div>`).join('');
+const stripHTML = Array.from({length: 10}, (_, i) =>`<div class="digit">${i}</div>`).join("");
 
 const strips = document.querySelectorAll('.digit-strip');
 
-strips.forEach(strip => strip.innerHTML.innerHTML = stripHTML);
+strips.forEach(strip => strip.innerHTML = stripHTML);
 
 let count = 0;
 function updateOdometer() {
