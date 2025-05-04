@@ -8,3 +8,10 @@ const items = [
 
 const carousel = document.getElementById("carousel");
 
+items.forEach((item, index) => {
+    const carouselItem = document.createElement("div");
+    carouselItem.classList.add("item");
+    carousel.style.setProperty("--index", index + 1);
+    carouselItem.innerHTML = ``;
+    carouselItem.appendChild(carouselItem);
+});
