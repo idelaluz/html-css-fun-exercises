@@ -78,3 +78,9 @@ body {
     }
 }
 
+.item {
+    --animation-delay-fraction: 3s;
+    animation: carousel-animate-vertical 27s linear infinite;
+    animation-delay: calc(var(--animation-delay-fraction) * (var(--index) - 3));
+    opacity: 0;
+}
