@@ -109,3 +109,25 @@ body {
     box-shadow: 0px 0px 15px 10px black;
 }
 
+.logs {
+    bottom: 0;
+    display: flex;
+    width: 100px;   
+}
+
+.logs .one, 
+.logs .three {
+    width: 90px;
+}
+
+.logs .one .log,
+.logs .three .log {
+    position: relative;
+    height: 40px;
+    background: #725442;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 11% 100%);
+    transform-origin: 0 0;
+    transform: skewY(-10deg);
+    margin-bottom: -1px;
+}
+
