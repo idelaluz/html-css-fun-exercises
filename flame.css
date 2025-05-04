@@ -131,3 +131,18 @@ body {
     margin-bottom: -1px;
 }
 
+.logs .one::after,
+.logs .three::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 39px;
+    height: 40px;
+    border-radius: 50%;
+    background: #91725c;
+    transform: translate(-50%, -100%);
+    box-sizing: border-box;
+    border: 2px #725442 solid;
+    margin-top: 1px;
+}
+
