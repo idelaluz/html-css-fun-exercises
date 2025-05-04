@@ -1,0 +1,31 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(60deg, #420285, #08bdbd);
+    color: #333;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.carousel {
+    position: relative;
+    width: 400px;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 12px;
+    filter: drop-shadow(0 2px 2px #555);
+    will-change: transform, opacity;
+}
+
+.item-body {
+    
+}
