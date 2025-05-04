@@ -68,3 +68,20 @@ body {
     box-shadow: 0px 0px 9px 4px orange;
 }
 
+.yellow {
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+
+.white {
+    left: 15px; 
+    bottom: -4px;
+    width: 25px;
+    height: 25px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px white;
+}
+
