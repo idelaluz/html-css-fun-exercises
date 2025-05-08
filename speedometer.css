@@ -14,4 +14,15 @@
     left: 50px;
 }
 
-.
+.zero {
+    position: absolute;
+    top: 165px;
+    left: 80px;
+}
+
+.twohundred {
+    position: absolute;
+    top: 165px;
+    left: 280px;
+}
+
