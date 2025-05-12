@@ -37,5 +37,10 @@ body {
 }
 
 @keyframes sway {
-    
+    0%, 100% {
+        transform: translateX(-50%)rotate(-2deg);
+    }
+    50% {
+        transform: translateX(-50%)rotate(2deg);
+    }
 }
