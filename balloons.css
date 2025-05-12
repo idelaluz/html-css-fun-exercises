@@ -4,3 +4,16 @@ body {
     background: linear-gradient(#aee1f9, #e0f7ff);
     overflow: hidden;
 }
+
+.balloon {
+    width: 80px;
+    height: 100px;
+    background: radial-gradient(circle at 40% 30%, yellow, blue);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: floatUp 12s linear infinite, sway 3s ease-in-out infinite;
+}
+
