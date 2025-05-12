@@ -8,7 +8,7 @@ body {
 .balloon {
     width: 80px;
     height: 100px;
-    background: radial-gradient(circle at 40% 30%, yellow, blue);
+    background: radial-gradient(circle at 40% 30%, green, blue);
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     position: absolute;
     bottom: -120px;
