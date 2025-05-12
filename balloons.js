@@ -5,4 +5,7 @@ const createBalloon = () => {
     document.body.appendChild(balloon);
 };
 
-for (let i = 0; i < 5; )
+for (let i = 0; i < 5; i++){
+    setTimeout(createBalloon, i * 1000);
+}
+
