@@ -10,3 +10,10 @@ function createSprinkle() {
     donut.appendChild(sprinkle);
 }
 
+setTimeout(() => {
+    sprinkle.remove();
+    }, 4000);
+
+setInterval(createSprinkle, 300);
+
+
