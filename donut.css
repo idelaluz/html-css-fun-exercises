@@ -33,4 +33,14 @@ body {
 
 .frosting {
     position: absolute; 
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    background: radial-gradient(circle at center, #ff4da6 20%, #ff3385 90%);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    clip-path: ellipse(100px 50px at center);
+    z-index: 1;
 }
+
