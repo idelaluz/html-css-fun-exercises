@@ -8,3 +8,29 @@ body {
     transform: scale(90%);
 }
 
+.donut {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at center, #c47f27 30%, #a85712 80%);
+    border-radius: 50%;
+    box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.2), inset 10px 10px 15px rgba(255, 255, 255, 0.3);
+    animation: spin 12s linear infinite;
+}
+
+.donut::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fcecc9;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.frosting {
+    position: absolute; 
+}
