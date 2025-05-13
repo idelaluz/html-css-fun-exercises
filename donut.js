@@ -8,11 +8,12 @@ function createSprinkle() {
     sprinkle.style.left = Math.random() * 160 + 20 + "px";
     sprinkle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
     donut.appendChild(sprinkle);
-}
 
-setTimeout(() => {
-    sprinkle.remove();
+
+    setTimeout(() => {
+        sprinkle.remove();
     }, 4000);
+}
 
 setInterval(createSprinkle, 300);
 
