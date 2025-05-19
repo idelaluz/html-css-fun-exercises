@@ -46,8 +46,28 @@ body {
     width: 200px;
     height: 120px;
     transform: translate(-50%, -50%) rotateX(-45deg);
+    animation-duration: 5s;
 }
 
 .orbitc {
-    
+    width: 200px;
+    height: 120px;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    animation-duration: 10s;
 }
+
+.electron {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px cyan, 0 0 30px cyan;
+}
+
+.electrona {
+    background: rgba(0, 160, 255);
+}
+
