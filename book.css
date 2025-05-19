@@ -21,3 +21,23 @@ body {
     height: 12.5rem;
 }
 
+.page {
+    top: 0.25rem;
+    left: 0.25rem;
+    background-color: #e9e6c4;
+    transform: rotateY(0deg);
+    width: 9rem;
+    height: 12rem;
+    text-align: right;
+    font-size: 8px;
+    color: #777;
+    font-family: monospace;    
+}
+
+.page::before, .page::after {
+    display: block;
+    border-top: 1px dashed rgba(0, 0, 0, 0.3);
+    content: '';
+    padding-bottom: 1rem; 
+}
+
