@@ -50,3 +50,16 @@ body {
     box-sizing: boder-box;
 }
 
+.cover.turn {
+    animation: bookCover 3s forwards;    
+}
+
+.page.turn {
+    animation: bookOpen 3x forwards;
+}
+
+.page:nth-of-type(1) {
+    animation-delay: 0.05s;
+}
+
+.page:
