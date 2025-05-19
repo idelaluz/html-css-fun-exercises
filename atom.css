@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #101010;
+}
+
+.atom {
+    position: relative; 
+    width: 200px;
+    height: 200px;
+}
+
+.center {
+    width: 40px;
+    height: 40px;
+    background: orangered;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px orange, 0 0 50px orangered;
+}
+
