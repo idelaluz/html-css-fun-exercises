@@ -33,27 +33,27 @@ body {
     border-radius: 50%;
     border: 1px dashed rgba(255, 255, 255, 0.3);
     transform-style: preserve-3d;
-    animation: rotate 3s linear infinite;
+    animation: rotate 2.5s linear infinite;
 }
 
 .orbita {
     width: 200px;
     height: 120px;
-    transform: translate(-50%, -50%) rotateX(45deg);
+    transform: translate(-50%, -50%) rotateX(58deg);
 }
 
 .orbitb {
     width: 200px;
     height: 120px;
-    transform: translate(-50%, -50%) rotateX(-45deg);
-    animation-duration: 7s;
+    transform: translate(-50%, -50%) rotateX(-39deg);
+    animation-duration: 4.2s;
 }
 
 .orbitc {
-    width: 200px;
+    width: 200px; /*200px and 120px*/
     height: 120px;
-    transform: translate(-50%, -50%) rotateY(90deg);
-    animation-duration: 3.8s;
+    transform: translate(-50%, -50%) rotateY(75deg);
+    animation-duration: 1.8s;
 }
 
 .electron {
