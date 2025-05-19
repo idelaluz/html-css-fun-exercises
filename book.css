@@ -62,4 +62,26 @@ body {
     animation-delay: 0.05s;
 }
 
-.page:
+.page:nth-of-type(2) {
+    animation-delay: 0.33s;
+}
+
+.page:nth-of-type(3) {
+    animation-delay: 0.66s;
+}
+
+.page:nth-of-type(4) {
+    animation: bookOpen15deg 3s forwards;
+    animation-delay: 0.99s;
+}
+
+.page:nth-of-type(5) {
+    animation: bookOpen30deg 3s forwards;
+    animation-delay: 1.2s;
+}
+
+.page:nth-of-type(6) {
+    animation: bookOpen55deg 3s forwards;
+    animation-delay: 1.25s;
+}
+
