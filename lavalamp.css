@@ -8,5 +8,25 @@ body {
 }
 
 .wall {
-    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;    
 }
+
+.wall::before {
+    content: '';
+    position: absolute;
+    border-radius: 47% 53% 45% 55% / 67% 59% 41% 33%;
+    margin: auto;
+    width: 0;
+    height: 0;
+    left: 0;
+    right: -70px;
+    z-index: -1;
+    top: -30px;
+    opacity: 0.3;
+    bottom: -180px;
+    animation: s 9s linear infinte forwards;
+}
+
