@@ -27,6 +27,35 @@ body {
     top: -30px;
     opacity: 0.3;
     bottom: -180px;
-    animation: s 9s linear infinte forwards;
+    animation: s 9s linear infinite forwards;
+}
+
+.wall::after {
+    content: '';
+    position: absolute;
+    border-radius: 47% 53% 45% 55% / 67% 59% 41% 33%;
+    margin: auto;
+    width: 0;
+    height: 0;
+    left: -30px;
+    right: 0;
+    z-index: -1;
+    bottom: -180px;
+    opacity: 0.3;
+    top: 0;
+    animation: s 10s linear infinite reverse forwards;
+}
+
+.c {
+    width: 125px;
+    height: 210px;
+    margin: auto; 
+    border-width: 3px;
+    border-style: solid;
+    animation: b 9s linear infinite forwards;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.11)65%, rgba(148, 13, 144, 0.99) 100%); 
 }
 
