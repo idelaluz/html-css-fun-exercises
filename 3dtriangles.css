@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.scene {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1600px;
+}
+
+.scene *{
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.octahedron {
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    animation: rotatearound 40s linear infinite;
+}
+
