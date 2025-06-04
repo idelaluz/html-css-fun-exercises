@@ -32,3 +32,48 @@ body {
     animation: rotatearound 40s linear infinite;
 }
 
+@keyframes rotatearound {
+    to {
+        transform: rotateY(3turn) rotateX(-1turn);
+    }
+}
+
+.face {
+    --size: min(60vmin, 20rem);
+    width: var(--size);
+    height: var(--size);
+    clip-path: polygon(
+        0% 100%,
+        100% 100%,
+        50% calc(100% - 0.866 * 100%),
+        0% 100%
+    );
+    transform-origin: bottom;
+}
+input {
+    position: absolute; 
+    left: -100vw;
+    width: 1px;
+    height: 1px;
+}
+label {
+    z-index: 10;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    color: #ddd;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    background-color: #222;
+}
+
+label::hover,
+label::focus-visible {
+    color: #fff;
+    background-color: #555;
+}
+input::focus-visible + label {
+    outline
+}
