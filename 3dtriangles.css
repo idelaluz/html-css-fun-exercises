@@ -75,5 +75,7 @@ label::focus-visible {
     background-color: #555;
 }
 input::focus-visible + label {
-    outline
+    outline: 2px solid white;
 }
+
+input::checked 
